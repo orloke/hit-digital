@@ -8,6 +8,7 @@ export const Content = styled.button`
   );
 
   color: #ffffff;
+  font-weight: bold;
   min-width: 10rem;
   border: none;
   border-radius: 10px;

@@ -12,4 +12,9 @@ export const Main = styled.div`
   padding: 2rem;
   font-size: 1.2rem;
   border-radius: 10px;
+  @media (max-width: 768px) {
+    width: 90%;
+    height: 90%;
+    margin-bottom: 2rem;
+  }
 `;
