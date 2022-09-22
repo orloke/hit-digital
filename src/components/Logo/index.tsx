@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import logo from '../../../public/assets/logo.png';
+import { Container } from './styles';
 
 export function Logo() {
   return (
-    <div>
+    <Container>
       <Image src={logo} />
-    </div>
+    </Container>
   );
 }

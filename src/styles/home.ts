@@ -1,9 +1,15 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
-  background: #212121;
-  display: flex;
-  justify-content: center;
+export const Main = styled.div`
+  width: 780px;
+  height: 435px;
+  background: linear-gradient(
+    0deg,
+    rgba(235, 92, 32, 1) 0%,
+    rgba(250, 139, 92, 0.9133403361344538) 100%
+  );
+  color: #ffff;
+  padding: 2rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
 `;

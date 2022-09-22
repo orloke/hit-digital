@@ -1,15 +1,16 @@
 import Image from 'next/image';
+import { ReactNode } from 'react';
 import borderBottom from '../../../public/assets/borderBottom.png';
 import { Container } from './styles';
 
 interface PageNameProps {
-  text: string;
+  children: ReactNode;
 }
 
-export function PageName({ text }: PageNameProps) {
+export function PageName({ children }: PageNameProps) {
   return (
     <Container>
-      <p>{text}</p>
+      <p>{children}</p>
       <Image src={borderBottom} />
     </Container>
   );
