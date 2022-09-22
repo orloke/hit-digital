@@ -2,10 +2,14 @@ import Image from 'next/image';
 import borderBottom from '../../../public/assets/borderBottom.png';
 import { Container } from './styles';
 
-export default function PageName() {
+interface PageNameProps {
+  text: string;
+}
+
+export function PageName({ text }: PageNameProps) {
   return (
     <Container>
-      <p>testando</p>
+      <p>{text}</p>
       <Image src={borderBottom} />
     </Container>
   );
