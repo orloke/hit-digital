@@ -85,7 +85,7 @@ export const DivInputs = styled.div<DivInputsProps>`
 
   textarea {
     width: 100%;
-    height: 200px;
+    height: 80%;
     padding: 0.7rem;
     border: #fc520a solid 1px;
     border-radius: 5px;

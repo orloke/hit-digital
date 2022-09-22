@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { useRouter } from 'next/router';
+import { toast } from 'react-toastify';
 import Layout from '../../components/Layout';
 import contact from '../../../public/assets/contact.jpg';
 import {
@@ -18,6 +20,7 @@ const validationSchema = Yup.object({
 });
 
 export default function Contact() {
+  const router = useRouter();
   const formik = useFormik({
     initialValues: {
       username: '',
@@ -25,8 +28,9 @@ export default function Contact() {
       mensagem: '',
     },
     validationSchema,
-    onSubmit: values => {
-      console.log(values);
+    onSubmit: () => {
+      toast.success(`Mensagem enviada! 👌`);
+      router.push('/');
     },
   });
   return (
