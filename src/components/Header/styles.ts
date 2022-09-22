@@ -12,4 +12,9 @@ export const DivButton = styled.div`
   display: flex;
   justify-content: center;
   column-gap: 1rem;
+  @media (max-width: 388px) {
+    flex-direction: column;
+    width: 100%;
+    row-gap: 1rem;
+  }
 `;

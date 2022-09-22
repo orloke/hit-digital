@@ -13,8 +13,8 @@ export default function Header({ currentPage }: PropsHeader) {
     <Container>
       <Logo />
       <DivButton>
-        <Button>INTRODUÇÃO</Button>
-        <Button>CONTATO</Button>
+        <Button href="/">INTRODUÇÃO</Button>
+        <Button href="/contacts">CONTATO</Button>
       </DivButton>
       <PageName>{currentPage}</PageName>
     </Container>

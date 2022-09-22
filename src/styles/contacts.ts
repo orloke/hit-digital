@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-export const Form = styled.form`
+export const Container = styled.div`
   width: 780px;
-  height: 460px;
+  height: 465px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   background: linear-gradient(
     0deg,
     rgba(235, 92, 32, 1) 0%,
@@ -17,23 +17,45 @@ export const Form = styled.form`
 
   @media (max-width: 768px) {
     width: 90%;
-    height: 90%;
     margin-bottom: 2rem;
   }
+`;
 
+export const DivImage = styled.div`
+  position: relative;
+  width: 30%;
+  @media (max-width: 768px) {
+    display: none;
+  }
+  img {
+    border-radius: 10px;
+    border: #fc520a solid 1px !important;
+  }
+`;
+
+export const Form = styled.form`
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
   textarea {
     width: 100%;
-    height: 70%;
+    height: 65%;
     margin-top: 2rem;
     padding: 0.7rem;
-    border: none;
+    border: #fc520a solid 1px;
     border-radius: 5px;
     font-family: Roboto;
+    &:focus-visible {
+      outline: none;
+    }
   }
   button {
     margin: auto;
+    margin-bottom: 0;
     color: #ffff;
-    margin-top: 1rem;
     padding: 0.7rem;
     border: none;
     border-radius: 5px;
@@ -52,7 +74,10 @@ export const Info = styled.div`
   input {
     width: 48%;
     padding: 0.7rem;
-    border: none;
+    border: #fc520a solid 1px;
     border-radius: 5px;
+    &:focus-visible {
+      outline: none;
+    }
   }
 `;
