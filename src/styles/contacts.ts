@@ -29,7 +29,6 @@ export const DivImage = styled.div`
   }
   img {
     border-radius: 10px;
-    border: #fc520a solid 1px !important;
   }
 `;
 
@@ -37,21 +36,11 @@ export const Form = styled.form`
   width: 65%;
   display: flex;
   flex-direction: column;
+
   @media (max-width: 768px) {
     width: 100%;
   }
-  textarea {
-    width: 100%;
-    height: 65%;
-    margin-top: 2rem;
-    padding: 0.7rem;
-    border: #fc520a solid 1px;
-    border-radius: 5px;
-    font-family: Roboto;
-    &:focus-visible {
-      outline: none;
-    }
-  }
+
   button {
     margin: auto;
     margin-bottom: 0;
@@ -62,22 +51,52 @@ export const Form = styled.form`
     background-color: #373735;
     font-weight: bold;
     min-width: 10rem;
+    transition: filter 0.2s ease-in-out;
     &:hover {
-      background-color: #2c2c2a;
+      filter: brightness(0.8);
     }
   }
 `;
 
 export const Info = styled.div`
   display: flex;
-  justify-content: space-between;
+  column-gap: 1rem;
+`;
+
+interface DivInputsProps {
+  marginTop?: number;
+}
+
+export const DivInputs = styled.div<DivInputsProps>`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-top: ${props => props.marginTop}rem;
   input {
-    width: 48%;
+    width: 100%;
     padding: 0.7rem;
     border: #fc520a solid 1px;
     border-radius: 5px;
     &:focus-visible {
       outline: none;
     }
+  }
+
+  textarea {
+    width: 100%;
+    height: 200px;
+    padding: 0.7rem;
+    border: #fc520a solid 1px;
+    border-radius: 5px;
+    font-family: Roboto;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  .errors {
+    font-size: 0.7rem;
   }
 `;

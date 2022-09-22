@@ -13,8 +13,8 @@ export const Content = styled.button`
   border: none;
   border-radius: 10px;
   padding: 0.7rem 1.1rem;
-  transition: opacity 0.2s ease-in-out;
+  transition: filter 0.2s ease-in-out;
   &:hover {
-    opacity: 0.7;
+    filter: brightness(0.8);
   }
 `;
