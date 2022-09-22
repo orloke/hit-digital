@@ -1,3 +1,12 @@
+import { Logo } from '../components/Logo';
+import PageName from '../components/NamePage';
+import { Container } from '../styles/home';
+
 export default function Home() {
-  return <div>oiiiii</div>;
+  return (
+    <Container>
+      <Logo />
+      <PageName />
+    </Container>
+  );
 }
