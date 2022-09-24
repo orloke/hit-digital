@@ -1,11 +1,18 @@
 import styled from 'styled-components';
 
-export const Content = styled.button`
-  background: linear-gradient(
-    0deg,
-    rgba(235, 92, 32, 1) 0%,
-    rgba(250, 139, 92, 0.9133403361344538) 100%
-  );
+interface PropsContent {
+  active: boolean;
+}
+
+export const Content = styled.button<PropsContent>`
+  background: ${props =>
+    props.active
+      ? 'rgb(250 74 0) '
+      : `linear-gradient(
+        0deg,
+        rgba(235, 92, 32, 1) 0%,
+        rgba(250, 139, 92, 0.9133403361344538) 100%
+      )`};
 
   color: #ffffff;
   font-weight: bold;
