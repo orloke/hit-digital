@@ -14,7 +14,10 @@ export default function Home() {
         <p>
           Somos uma produtora digital que desenvolve tecnologia e viabiliza
           outsourcing de equipes de alto padrão, preparadas para atuar em
-          projetos de marcas globais. Veja alguns de nossos parceiros:
+          projetos de marcas globais.
+          <br />
+          <br />
+          Veja alguns de nossos parceiros:
         </p>
         <Partners>
           <Image src={hogarth} />
