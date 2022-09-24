@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const Main = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 780px;
   height: 435px;
   background: linear-gradient(
@@ -21,5 +23,18 @@ export const Main = styled.div`
 
   p {
     text-align: justify;
+  }
+`;
+
+export const Partners = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: auto;
+  @media (max-width: 768px) {
+    row-gap: 3rem;
+    margin-top: 2rem;
   }
 `;
