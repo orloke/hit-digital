@@ -6,8 +6,10 @@ import { Container } from './styles';
 export function Logo() {
   return (
     <Container>
-      <Link href="/">
-        <Image src={logo} />
+      <Link href="/" passHref>
+        <span>
+          <Image src={logo} />
+        </span>
       </Link>
     </Container>
   );
