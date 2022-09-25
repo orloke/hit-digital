@@ -67,7 +67,7 @@ $ npm run dev
 
 Escolhi o Next para esse desafio porque por se tratar de um site que está vendendo um produto (por mais que não seja um produto físico) é importante ter uma boa indexação pelos motores de busca.
 
-Na parte de Front-End dê preferencia a usar Redux em vez de ContextApi. Ambos resolveriam os problemas que surgiram, mas através de pesquisas e opiniões de outros Devs considero o Redux mais poderoso. O vídeo abaixo fala desses e outros pontos do código.
+Na parte de Front-End dê preferencia por compotenciar o máximo possível do codigo de modo a facilitar a reutilização e a manutenção. O vídeo abaixo fala desses e outros pontos do código.
 
 
 
@@ -79,7 +79,11 @@ https://user-images.githubusercontent.com/96503495/192123246-ad3497eb-3add-4fd3-
 
 #### Dificuldades e observaçãoes
 
-Não foi um projeto difícil e poderia ter levado menos tempo se tivesse usado bilbiotecas como o Chakra ou Tailwindcss, mas optei pelo o Css para cumprir com os requisitos de entrega!
+* Não foi um projeto difícil e poderia ter levado menos tempo se tivesse usado bilbiotecas como o [Chakra](https://chakra-ui.com) ou [Tailwindcss](https://tailwindcss.com), mas optei pelo Css para cumprir com os requisitos de entrega.
+
+* Escolhi não usar o Drupal por ainda não dominar totalmente. Mas como dito anteriormente, o que foi criado nesse site pode ser facilmente reutilizado em outros!
+
+Agradeço a [Hit Digital](https://hitdigital.com.br) pela oportunidade! :D
 
 
 ## :phone: Contatos
