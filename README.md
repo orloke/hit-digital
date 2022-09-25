@@ -28,9 +28,9 @@ https://hit-digital-indol.vercel.app
 
 Não esqueça de ativar o áudio do vídeo!
 
+https://user-images.githubusercontent.com/96503495/192159446-deef5456-84fe-449a-bbcb-cb5102a486dc.mp4
 
-https://user-images.githubusercontent.com/96503495/192122846-290ba027-8233-4a45-ace7-56b76e5e9909.mp4
-
+As cores são as mesmas do protótipo. Até tentei colocar novas cores, mas achei melhor manter para combinar com a logo da empresa!
 
 #### Responsividade
 
@@ -70,9 +70,7 @@ Escolhi o Next para esse desafio porque por se tratar de um site que está vende
 Na parte de Front-End dê preferencia por compotenciar o máximo possível do codigo de modo a facilitar a reutilização e a manutenção. O vídeo abaixo fala desses e outros pontos do código.
 
 
-
-https://user-images.githubusercontent.com/96503495/192123246-ad3497eb-3add-4fd3-b989-183732047a09.mp4
-
+https://user-images.githubusercontent.com/96503495/192159987-a686e081-d2b3-45cb-828b-36c527a9f3ae.mp4
 
 
 ## :grinning: Conclusão
