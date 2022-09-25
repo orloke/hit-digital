@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
@@ -34,49 +35,54 @@ export default function Contact() {
     },
   });
   return (
-    <Layout currentPage="Contato">
-      <Container>
-        <DivImage>
-          <Image priority layout="fill" src={contact} />
-        </DivImage>
-        <Form onSubmit={formik.handleSubmit}>
-          <Info>
-            <DivInputs>
-              <input
-                id="username"
-                name="username"
-                type="text"
-                placeholder="Nome*"
-                value={formik.values.username}
+    <>
+      <Head>
+        <title>Contato</title>
+      </Head>
+      <Layout currentPage="Contato">
+        <Container>
+          <DivImage>
+            <Image priority layout="fill" src={contact} />
+          </DivImage>
+          <Form onSubmit={formik.handleSubmit}>
+            <Info>
+              <DivInputs>
+                <input
+                  id="username"
+                  name="username"
+                  type="text"
+                  placeholder="Nome*"
+                  value={formik.values.username}
+                  onChange={formik.handleChange}
+                />
+                <span className="errors">{formik.errors.username}</span>
+              </DivInputs>
+              <DivInputs>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="E-mail*"
+                  value={formik.values.email}
+                  onChange={formik.handleChange}
+                />
+                <span className="errors">{formik.errors.email}</span>
+              </DivInputs>
+            </Info>
+            <DivInputs marginTop={2}>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                placeholder="Mensagem*"
+                value={formik.values.mensagem}
                 onChange={formik.handleChange}
               />
-              <span className="errors">{formik.errors.username}</span>
+              <span className="errors">{formik.errors.mensagem}</span>
             </DivInputs>
-            <DivInputs>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="E-mail*"
-                value={formik.values.email}
-                onChange={formik.handleChange}
-              />
-              <span className="errors">{formik.errors.email}</span>
-            </DivInputs>
-          </Info>
-          <DivInputs marginTop={2}>
-            <textarea
-              id="mensagem"
-              name="mensagem"
-              placeholder="Mensagem*"
-              value={formik.values.mensagem}
-              onChange={formik.handleChange}
-            />
-            <span className="errors">{formik.errors.mensagem}</span>
-          </DivInputs>
-          <button type="submit"> ENVIAR </button>
-        </Form>
-      </Container>
-    </Layout>
+            <button type="submit"> ENVIAR </button>
+          </Form>
+        </Container>
+      </Layout>
+    </>
   );
 }
