@@ -79,7 +79,7 @@ https://user-images.githubusercontent.com/96503495/192123246-ad3497eb-3add-4fd3-
 
 #### Dificuldades e observaçãoes
 
-
+Não foi um projeto difícil e poderia ter levado menos tempo se tivesse usado bilbiotecas como o Chakra ou Tailwindcss, mas optei pelo o Css para cumprir com os requisitos de entrega!
 
 
 ## :phone: Contatos
